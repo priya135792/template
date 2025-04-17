@@ -1,0 +1,13 @@
+name: Testing
+on:
+  push:
+    branches:
+    - main
+jobs:
+  testing:
+    runs-on: [ubuntu]
+    steps:
+    - name: checkout repo
+      uses: actions/checkout@v4
+    - name: print env of the repo
+      run: env
