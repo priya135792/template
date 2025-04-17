@@ -1,11 +1,11 @@
-name: Testing
+ubuntu-latestname: Testing
 on:
   push:
     branches:
     - main
 jobs:
   testing:
-    runs-on: [ubuntu]
+    runs-on: [ubuntu-latest]
     steps:
     - name: checkout repo
       uses: actions/checkout@v4
